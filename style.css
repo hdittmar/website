@@ -1,5 +1,5 @@
 body{
-    background-color:lightseagreen;
+    background-color:#20b2aa;
 }
 
 .center{
@@ -15,4 +15,8 @@ img{
     max-width: 80vw;
     width: 600px;
     margin-bottom: 5vh;
+}
+
+#tripetto{
+    width:90%;
 }

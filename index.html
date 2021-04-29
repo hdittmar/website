@@ -10,7 +10,24 @@
 <body>
     <div class="container center">
         <img src="title_white.png" alt="Mission Startup">
-        <div class="typeform-widget" data-url="https://form.typeform.com/to/AJR4SH3D?typeform-medium=embed-snippet" style="width: 100%; height: 500px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script>
-    </div>
+        <div id="tripetto"></div>
+        <script src="https://unpkg.com/tripetto-runner-foundation"></script>
+        <script src="https://unpkg.com/tripetto-runner-autoscroll"></script>
+        <script src="https://unpkg.com/tripetto-services"></script>
+        <script>
+        var tripetto = TripettoServices.init({ token: "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoidTNub2pDS3pDQUNHTkVhUmFCMGFIN0Q4aHBhMHdnZGEySzNmR2RtWlpXZz0iLCJkZWZpbml0aW9uIjoiS01IbEpwaEg1U1Rlc3htdGdRZnljVFlLUnc4RGgxMnF6MjFPWnFiVlJkTT0iLCJ0eXBlIjoiY29sbGVjdCJ9.q5fUxSj2I8T2bXfL2ZVV1qF1v9jNtkih5wJj_74kDkc" });
+        
+        TripettoAutoscroll.run({
+            element: document.getElementById("tripetto"),
+            definition: tripetto.definition,
+            styles: tripetto.styles,
+            l10n: tripetto.l10n,
+            locale: tripetto.locale,
+            translations: tripetto.translations,
+            attachments: tripetto.attachments,
+            onSubmit: tripetto.onSubmit
+        });
+        </script>
+            </div>
 </body>
 </html>
